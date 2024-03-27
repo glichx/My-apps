@@ -1,0 +1,330 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock title %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+{% endblock head %}
+{% block content %}
+
+<!-- TESTING -->
+{% if user.is_authenticated %}
+    Hi {{ user.username }}!
+    <a class="text-success" href="{% url 'logout' %}">Log Out</a>
+{% else %}
+{% endif %}
+<!-- TESTING ENDS -->
+
+<section class="paral">
+    <section class="parallax-1" style="background-image: url('/static/images/hompage/treehouse1.png');">
+        <div class="parallax-inner">
+            <h2>WELCOME  TO  <span style="color: #28a745;">Liv<span class="brand">.in</span></span></h2>
+        </div>
+    </section>
+</section>
+
+<!-- For loopil poda vendum -->
+<div class="container">
+<div class="inner-container">
+<div class="prop-card">
+<div class="ui-card">
+    <img id="im" src= "/static/images/cards/Glasshouse.png" alt="">
+        <div class="description">
+            <h3>Best Home</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, neque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, sit.</p>
+            <a href="#">View</a>
+        </div>
+</div>
+<div class="price">    
+    
+    <h5>Rent ~ $300</h5>
+    <div class="str">
+        <!-- <p>Reviews</p> -->
+        <div class="reviewss">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+
+    </div>
+</div>
+<div class="place">
+    <h6>Chennai, India </h6>
+</div> 
+</div>
+
+<div class="prop-card">
+<div class="ui-card">
+    <img id="im" src="/static/images/cards/Glasshouse.png" alt="">
+        <div class="description">
+            <h3>Best Home</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, neque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, sit.</p>
+            <a href="#">View</a>
+        </div>
+</div>
+<div class="price">    
+    
+    <h5>Rent ~ $300</h5>
+    <div class="str">
+        <!-- <p>Reviews</p> -->
+        <div class="reviewss">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    </div>
+</div>
+<div class="place">
+    <h6>Chennai, India </h6>
+</div>
+</div>
+
+<div class="prop-card">
+<div class="ui-card">
+    <img id="im" src="/static/images/cards/Glasshouse.png" alt="">
+        <div class="description">
+            <h3>Best Home</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, neque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, sit.</p>
+            <a href="#">View</a>
+        </div>
+</div>
+<div class="price">    
+    
+    <h5>Rent ~ $300</h5>
+    <div class="str">
+        <!-- <p>Reviews</p> -->
+        <div class="reviewss">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    </div>
+</div>
+<div class="place">
+    <h6>Chennai, India </h6>
+</div>    
+</div>
+
+
+
+
+<div class="prop-card">
+<div class="ui-card">
+    <img id="im" src="/static/images/cards/Glasshouse.png" alt="">
+        <div class="description">
+            <h3>Best Home</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, neque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, sit.</p>
+            <a href="#">View</a>
+        </div>
+</div>
+<div class="price">    
+    
+    <h5>Rent ~ $300</h5>
+    <div class="str">
+        <!-- <p>Reviews</p> -->
+        <div class="reviewss">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+        </div>
+    </div>
+</div>
+<div class="place">
+    <h6>Chennai, India </h6>
+</div>  
+</div>
+</div>
+</div>
+</div>
+<!-- End of For loop -->
+
+
+<!-- Reviews -->
+<section id="reviews">
+<div class="review-heading">
+    <h1>Our Happy Customer</h1>
+</div>
+
+<!-- Review Box -->
+<div class="review-box-container">
+
+    <!-- Box1 -->
+    <div class="review-box">
+
+        <!-- TOP ---------------------->
+        <div class="box-top">
+
+            <!-- Profile -->
+            <div class="profile">
+
+                <!-- Image -->
+                <div class="profile-img">
+                    <img src="/static/images/reviews/m1.jpg" alt="">
+                </div>
+
+                <!-- Name & Username  -->
+                <div class="name-user">
+                    <strong>Touseeq Ijaz</strong>
+                    <span>@touseeqijazweb</span>
+                </div>
+            </div>
+
+            <!-- Reviews -->
+            <div class="reviewss">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i><!--Empty star-->
+            </div> 
+        </div>
+        <!-- Box Closed -->
+        <!-- Comments -->
+        <div class="client-comment">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odio repudiandae cumque totam architecto accusamus earum, nihil ducimus ab animi inventore provident officia veniam corrupti ex omnis quia tempora, quo doloremque aliquid, vero dolore dignissimos nam! Ullam mollitia aut recusandae?</p>
+        </div>
+    </div>
+
+
+            <!-- Box2-->
+            <div class="review-box">
+
+                <!-- TOP ---------------------->
+                <div class="box-top">
+    
+                    <!-- Profile -->
+                    <div class="profile">
+    
+                        <!-- Image -->
+                        <div class="profile-img">
+                            <img src="/static/images/reviews/f1.jpg" alt="">
+                        </div>
+    
+                        <!-- Name & Username  -->
+                        <div class="name-user">
+                            <strong>Touseeq Ijaz</strong>
+                            <span>@touseeqijazweb</span>
+                        </div>
+                    </div>
+    
+                    <!-- Reviews -->
+                    <div class="reviewss">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><!--Empty star-->
+                    </div> 
+                </div>
+                <!-- Box Closed -->
+                <!-- Comments -->
+                <div class="client-comment">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odio repudiandae cumque totam architecto accusamus earum, nihil ducimus ab animi inventore provident officia veniam corrupti ex omnis quia tempora, quo doloremque aliquid, vero dolore dignissimos nam! Ullam mollitia aut recusandae?</p>
+                </div>
+            </div>
+
+
+    <!-- Box3 -->
+    <div class="review-box">
+
+        <!-- TOP ---------------------->
+        <div class="box-top">
+
+            <!-- Profile -->
+            <div class="profile">
+
+                <!-- Image -->
+                <div class="profile-img">
+                    <img src="/static/images/reviews/m2.jpg" alt="">
+                </div>
+
+                <!-- Name & Username  -->
+                <div class="name-user">
+                    <strong>Touseeq Ijaz</strong>
+                    <span>@touseeqijazweb</span>
+                </div>
+            </div>
+
+            <!-- Reviews -->
+            <div class="reviewss">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i><!--Empty star-->
+            </div> 
+        </div>
+        <!-- Box Closed -->
+        <!-- Comments -->
+        <div class="client-comment">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odio repudiandae cumque totam architecto accusamus earum, nihil ducimus ab animi inventore provident officia veniam corrupti ex omnis quia tempora, quo doloremque aliquid, vero dolore dignissimos nam! Ullam mollitia aut recusandae?</p>
+        </div>
+    </div>
+
+
+    <!-- Box4 -->
+    <div class="review-box">
+
+        <!-- TOP ---------------------->
+        <div class="box-top">
+
+            <!-- Profile -->
+            <div class="profile">
+
+                <!-- Image -->
+                <div class="profile-img">
+                    <img src="/static/images/reviews/f2.jpg" alt="">
+                </div>
+
+                <!-- Name & Username  -->
+                <div class="name-user">
+                    <strong>Touseeq Ijaz</strong>
+                    <span>@touseeqijazweb</span>
+                </div>
+            </div>
+
+            <!-- Reviews -->
+            <div class="reviewss">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i><!--Empty star-->
+            </div> 
+        </div>
+        <!-- Box Closed -->
+
+
+        <!-- Comments -->
+        <div class="client-comment">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odio repudiandae cumque totam architecto accusamus earum, nihil ducimus ab animi inventore provident officia veniam corrupti ex omnis quia tempora, quo doloremque aliquid, vero dolore dignissimos nam! Ullam mollitia aut recusandae?</p>
+        </div>
+    </div>
+
+
+</div>
+</section>
+<!-- End of Reviews -->
+
+<div class="thank">
+    <h2>THANK'S TO <span style="color: #28a745;">Liv<span style="color: black;">.in</span></span></h2>
+</div>
+<section class="paral">
+    <section class="parallax-2" style="background-image: url('/static/images/hompage/family.jpg');">
+        <div class="parallax-inner2">
+        </div>
+    </section>
+</section>
+    <!-- <p>You are not logged in</p>
+    <a href="{% url 'login' %}">Log In</a> |
+    <a href="{% url 'signup' %}">Sign Up</a> -->
+
+{% endblock content %}
